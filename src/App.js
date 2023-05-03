@@ -72,7 +72,7 @@ function Card({ content, detail }) {
         <ul className="fa-ul">
           {detail.map((item, index) => {
             return (
-              <li key={index} className={!item.enabled ? "text-muted" : ""}>
+              <li key={index} className={!item.enabled ? "text-muted" : ""}>✓
                 {item.name}
               </li>
             );
