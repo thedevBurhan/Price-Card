@@ -1,38 +1,75 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.App{
+  gap: 5rem; 
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  background-color: cornflowerblue;
+ margin: auto;
+ margin-top: 2rem;
+  padding: 3rem;
+  border-radius: 15px;
+}
+
+
+.pricing{
+  display: flex;
+  flex-wrap: wrap;
+  background-color: aliceblue;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-content: center;
+  border: none;
+  border-radius: 1rem;
+  transition: all 0.2s;
+  box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.1);
+  width: 20rem;
 }
 
-.App-link {
-  color: #61dafb;
+.pricing hr {
+  margin: 1.5rem 0;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+h5{
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  display: flex;
+  justify-content: center;
+  font-size: larger;
+}
+h4{
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  display: flex;
+  justify-content: center;
+  font-size:25px; 
+}
+.pricing ul li {
+  margin-bottom: 1rem;
+  display: flex;
+  align-content: center;
+}
+
+.pricing .text-muted {
+  opacity: 0.5;
+  color: black;
+}
+.butn{
+  text-align: center;
+  border-radius: 10px;
+  background-color: rgba(0, 255, 255, 0.611);
+  margin: 15px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: larger;
+ padding: 5px;
+}
+
+
+/* Hover Effects on Card */
+
+@media (min-width: 992px) {
+  .pricing:hover {
+    margin-top: -.25rem;
+    margin-bottom: .25rem;
+    box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.3);
   }
-  to {
-    transform: rotate(360deg);
-  }
+   .butn:hover{
+    background-color:deepskyblue;
+   }
 }
